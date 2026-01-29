@@ -1,11 +1,11 @@
 define Rogue_all_Clothes["black_sports_bra"] = {
-    "name": "черный спортивный лифчик",
-    "short_name_rod": "лифчика",
-    "short_name_dat": "лифчику",
-    "short_name_vin": "лифчик",
-    "short_name_tvo": "лифчиком",
-    "short_name_pre": "лифчике",
-    "short_name": "лифчик",
+    "name": "черное спортивное бра",
+    "short_name_rod": "бра",
+    "short_name_dat": "бра",
+    "short_name_vin": "бра",
+    "short_name_tvo": "бра",
+    "short_name_pre": "бра",
+    "short_name": "бра",
 
     "type": "bra",
 
@@ -82,7 +82,7 @@ label Rogue_black_sports_bra_change_private_before:
     if dice_roll == 1:
         $ Rogue.change_face("worried1", mouth = "lipbite")
 
-        ch_Rogue "Мне он нравится. . ."
+        ch_Rogue "Мне оно нравится. . ."
     elif dice_roll == 2:
         $ Rogue.change_face("smirk2")
 
@@ -113,7 +113,7 @@ label Rogue_black_sports_bra_change_public_before:
     if dice_roll == 1:
         $ Rogue.change_face("worried1", mouth = "lipbite")
 
-        ch_Rogue "Мне он нравится. . ."
+        ch_Rogue "Мне оно нравится. . ."
     elif dice_roll == 2:
         $ Rogue.change_face("smirk2")
 
@@ -134,6 +134,6 @@ label Rogue_black_sports_bra_change_public_after:
     elif dice_roll == 2:
         $ Rogue.change_face("sly")
 
-        ch_Rogue "Я когда-нибудь говорила тебе, что могу снять лифчик одной рукой?"
+        ch_Rogue "Я когда-нибудь говорила тебе, что могу снять бра одной рукой?"
 
     return

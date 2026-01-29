@@ -1,11 +1,11 @@
 define Rogue_all_Clothes["black_cage_bra"] = {
-    "name": "черный лифчик в клетку",
-    "short_name_rod": "лифчика",
-    "short_name_dat": "лифчику",
-    "short_name_vin": "лифчик",
-    "short_name_tvo": "лифчиком",
-    "short_name_pre": "лифчике",
-    "short_name": "лифчик",
+    "name": "черное бра в клетку",
+    "short_name_rod": "бра",
+    "short_name_dat": "бра",
+    "short_name_vin": "бра",
+    "short_name_tvo": "бра",
+    "short_name_pre": "бра",
+    "short_name": "бра",
 
     "type": "bra",
 
@@ -69,14 +69,14 @@ define Rogue_all_Clothes["black_cage_bra"] = {
 label Rogue_black_cage_bra_shopping_accept:
     $ Rogue.change_face("pleased2")
 
-    ch_Rogue "Думаешь, мне он подойдет?"
+    ch_Rogue "Думаешь, мне оно подойдет?"
 
     return
 
 label Rogue_black_cage_bra_shopping_reject:
     $ Rogue.change_face("worried1")
 
-    ch_Rogue "Меня не интересуют твои предпочтения в отношении лифчиков."
+    ch_Rogue "Меня не интересуют твои предпочтения в отношении бра."
 
     return
 
@@ -90,7 +90,7 @@ label Rogue_black_cage_bra_gift_accept:
 label Rogue_black_cage_bra_gift_reject:
     $ Rogue.change_face("surprised2")
 
-    ch_Rogue "Я бы предпочла, чтобы ты не покупал мне лифчики. . ."
+    ch_Rogue "Я бы предпочла, чтобы ты не покупал мне бра. . ."
 
     return
 
@@ -101,7 +101,7 @@ label Rogue_black_cage_bra_change_private_before:
         if dice_roll == 1:
             $ Rogue.change_face("worried1", eyes = "down")
 
-            ch_Rogue "Он довольно сексуальный. . . надену его только потому, что просишь ты. . ."
+            ch_Rogue "Оно довольно сексуальное. . . надену его только потому, что просишь ты. . ."
 
             $ Rogue.eyes = "neutral"
         elif dice_roll == 2:
@@ -120,11 +120,11 @@ label Rogue_black_cage_bra_change_private_after:
     if dice_roll == 1:
         $ Rogue.change_face("confused1", mouth = "lipbite")
 
-        ch_Rogue "Разве он не изящный?"
+        ch_Rogue "Разве оно не изящное?"
 
         $ Rogue.change_face("sexy")
 
-        ch_Rogue "Думаю, если бы я была вампиршей-королевой мертвых, он был бы постоянной частью моего гардероба."
+        ch_Rogue "Думаю, если бы я была вампиршей-королевой мертвых, оно было бы постоянной частью моего гардероба."
     elif dice_roll == 2:
         $ Rogue.change_face("sly")
 
@@ -141,11 +141,11 @@ label Rogue_black_cage_bra_change_public_before:
     if dice_roll == 1:
         $ Rogue.change_face("smirk2")
 
-        ch_Rogue "Мне нравится этот лифчик. . ."
+        ch_Rogue "Мне нравится это бра. . ."
     elif dice_roll == 2:
         $ Rogue.change_face("sly")
 
-        ch_Rogue "Я когда-нибудь говорила тебе, что могу снять лифчик одной рукой?"
+        ch_Rogue "Я когда-нибудь говорила тебе, что могу снять бра одной рукой?"
 
     return
 

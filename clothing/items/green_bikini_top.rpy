@@ -1,11 +1,11 @@
 define Rogue_all_Clothes["green_bikini_top"] = {
-    "name": "зеленый лифчик бикини",
-    "short_name": "лифчик бикини",
-    "short_name_rod": "лифчика бикини",
-    "short_name_dat": "лифчику бикини",
-    "short_name_vin": "лифчик бикини",
-    "short_name_tvo": "лифчиком бикини",
-    "short_name_pre": "лифчике бикини",
+    "name": "зеленое бра бикини",
+    "short_name": "бра бикини",
+    "short_name_rod": "бра бикини",
+    "short_name_dat": "бра бикини",
+    "short_name_vin": "бра бикини",
+    "short_name_tvo": "бра бикини",
+    "short_name_pre": "бра бикини",
 
     "type": "bra",
     "chapter": 1,
@@ -97,7 +97,7 @@ label Rogue_green_bikini_top_gift_accept:
 
     $ Rogue.change_face("smirk2")
 
-    ch_Rogue "Он милый. . ."
+    ch_Rogue "Оно милое. . ."
 
     return
 
@@ -132,13 +132,13 @@ label Rogue_green_bikini_top_change_private_after:
     if dice_roll == 1:
         $ Rogue.change_face("worried1", eyes = "down")
 
-        ch_Rogue "Немного откровенный. . . но мне нравится зеленый."
+        ch_Rogue "Немного откровенное. . . но мне нравится зеленый."
 
         $ Rogue.eyes = "neutral"
     elif dice_roll == 2:
         $ Rogue.change_face("sly")
 
-        ch_Rogue "В нем немного прохладно, но мне нравится, как он сидит на мне. . ."
+        ch_Rogue "В нем немного прохладно, но мне нравится, как оно сидит на мне. . ."
 
     return
 
