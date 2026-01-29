@@ -1,11 +1,11 @@
 define Rogue_all_Clothes["black_keyhole_bra"] = {
-    "name": "черный лифчик с вырезом",
-    "short_name_rod": "лифчика",
-    "short_name_dat": "лифчику",
-    "short_name_vin": "лифчик",
-    "short_name_tvo": "лифчиком",
-    "short_name_pre": "лифчике",
-    "short_name": "лифчик",
+    "name": "черное бра с вырезом",
+    "short_name_rod": "бра",
+    "short_name_dat": "бра",
+    "short_name_vin": "бра",
+    "short_name_tvo": "бра",
+    "short_name_pre": "бра",
+    "short_name": "бра",
 
     "type": "bra",
 
@@ -68,7 +68,7 @@ define Rogue_all_Clothes["black_keyhole_bra"] = {
 label Rogue_black_keyhole_bra_shopping_accept:
     $ Rogue.change_face("pleased2")
 
-    ch_Rogue "Ого, он такой милый. . ."
+    ch_Rogue "Ого, оно такое милое. . ."
 
     return
 
@@ -102,7 +102,7 @@ label Rogue_black_keyhole_bra_change_private_before:
     if dice_roll == 1:
         $ Rogue.change_face("pleased2", eyes = "down")
 
-        ch_Rogue "Он такой милый. . ."
+        ch_Rogue "Оно такое милое. . ."
 
         $ Rogue.eyes = "neutral"
     elif dice_roll == 2:
@@ -125,7 +125,7 @@ label Rogue_black_keyhole_bra_change_private_after:
     elif dice_roll == 2:
         $ Rogue.change_face("sexy")
 
-        ch_Rogue "Ради тебя я могла бы ходить топлесс, но в этом лифчике тоже неплохо. . ."
+        ch_Rogue "Ради тебя я могла бы ходить топлесс, но в этом бра тоже неплохо. . ."
 
     return
 
@@ -135,11 +135,11 @@ label Rogue_black_keyhole_bra_change_public_before:
     if dice_roll == 1:
         $ Rogue.change_face("smirk2")
 
-        ch_Rogue "Мне очень нравится этот лифчик."
+        ch_Rogue "Мне очень нравится это бра."
     elif dice_roll == 2:
         $ Rogue.change_face("worried1", mouth = "smirk")
 
-        ch_Rogue "Ты даже не представляешь, как меня спасает этот лифчик. . ."
+        ch_Rogue "Ты даже не представляешь, как меня спасает это бра. . ."
         ch_Rogue "Без него моей спине не очень хорошо."
 
     return
